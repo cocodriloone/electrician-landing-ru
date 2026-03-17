@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Цены и калькулятор — CostaVolt Electric</title>
+  <meta name="description" content="Примерные цены и калькулятор предварительной оценки электромонтажных работ в Торревьехе и окрестностях." />
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-wrap">
+      <a class="brand" href="index.html">
+        <span class="brand-mark">CV</span>
+        <span class="brand-text">
+          <strong>CostaVolt Electric</strong>
+          <small>Торревьеха и окрестности</small>
+        </span>
+      </a>
+
+      <button class="nav-toggle" id="navToggle" aria-label="Открыть меню">☰</button>
+
+      <nav class="nav" id="mainNav">
+        <a href="index.html">Главная</a>
+        <a href="services.html">Услуги</a>
+        <a href="pricing.html" class="active">Цены / калькулятор</a>
+        <a href="about.html">О мастере</a>
+        <a href="contacts.html">Контакты</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero section">
+      <div class="container narrow">
+        <div class="eyebrow">Предварительная оценка</div>
+        <h1>Цены и калькулятор</h1>
+        <p>
+          Это не финальная смета, а ориентир. Реальная стоимость зависит от объекта, состояния электрики,
+          доступа к точкам, объёма работ и скрытых проблем, которые невозможно оценить по одной кнопке на сайте.
+        </p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container grid grid-2">
+        <div class="card">
+          <h2>Примеры ориентиров</h2>
+          <div class="price-list">
+            <div class="price-row"><span>Диагностика / выезд</span><strong>от 40 €</strong></div>
+            <div class="price-row"><span>Замена розетки или выключателя</span><strong>от 15 € / шт.</strong></div>
+            <div class="price-row"><span>Монтаж светильника</span><strong>от 25 €</strong></div>
+            <div class="price-row"><span>Замена автомата</span><strong>от 35 €</strong></div>
+            <div class="price-row"><span>Подключение бытовой техники</span><strong>от 30 €</strong></div>
+            <div class="price-row"><span>Локальные работы по проводке</span><strong>по ситуации</strong></div>
+          </div>
+        </div>
+
+        <div class="card">
+          <h2>Калькулятор предварительной оценки</h2>
+
+          <form id="calcForm" class="calc-form">
+            <label>
+              Тип работ
+              <select id="jobType">
+                <option value="diagnostics">Диагностика</option>
+                <option value="socket">Розетки / выключатели</option>
+                <option value="lighting">Освещение</option>
+                <option value="panel">Автоматы / щит</option>
+                <option value="appliance">Подключение техники</option>
+                <option value="wiring">Локальная проводка</option>
+              </select>
+            </label>
+
+            <label>
+              Количество точек / единиц
+              <input type="number" id="quantity" min="1" max="50" value="1" />
+            </label>
+
+            <label>
+              Срочность
+              <select id="urgency">
+                <option value="normal">Обычный выезд</option>
+                <option value="soon">Нужен быстрее обычного</option>
+                <option value="urgent">Срочно</option>
+              </select>
+            </label>
+
+            <label>
+              Район
+              <select id="zone">
+                <option value="torrevieja">Торревьеха</option>
+                <option value="near">Окрестности</option>
+                <option value="far">Дальше базовой зоны</option>
+              </select>
+            </label>
+
+            <button type="button" class="btn btn-primary" id="calculateBtn">Рассчитать ориентир</button>
+          </form>
+
+          <div class="calc-result" id="calcResult">
+            <h3>Результат</h3>
+            <p>Выберите параметры и нажмите кнопку расчёта.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-alt">
+      <div class="container narrow">
+        <div class="card">
+          <h2>Почему тут диапазон, а не “точная цена”</h2>
+          <p>
+            Потому что нормальная оценка начинается не с красивой цифры, а с понимания объекта.
+            Точная цена без осмотра в этой нише часто означает либо ложь, либо будущий конфликт.
+          </p>
+          <a class="btn btn-secondary" href="contacts.html">Запросить уточнение по WhatsApp или форме</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-wrap">
+      <div>
+        <strong>CostaVolt Electric</strong>
+        <p>Калькулятор даёт только ориентир. Итог зависит от задачи и состояния объекта.</p>
+      </div>
+      <div class="footer-links">
+        <a href="services.html">Услуги</a>
+        <a href="contacts.html">Контакты</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/calculator.js"></script>
+</body>
+</html>
