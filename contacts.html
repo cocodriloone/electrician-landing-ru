@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Контакты — CostaVolt Electric</title>
+  <meta name="description" content="Контакты, форма, WhatsApp и email для заявок по электромонтажным работам в Торревьехе и окрестностях." />
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-wrap">
+      <a class="brand" href="index.html">
+        <span class="brand-mark">CV</span>
+        <span class="brand-text">
+          <strong>CostaVolt Electric</strong>
+          <small>Торревьеха и окрестности</small>
+        </span>
+      </a>
+
+      <button class="nav-toggle" id="navToggle" aria-label="Открыть меню">☰</button>
+
+      <nav class="nav" id="mainNav">
+        <a href="index.html">Главная</a>
+        <a href="services.html">Услуги</a>
+        <a href="pricing.html">Цены / калькулятор</a>
+        <a href="about.html">О мастере</a>
+        <a href="contacts.html" class="active">Контакты</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero section">
+      <div class="container narrow">
+        <div class="eyebrow">Связь и заявки</div>
+        <h1>Контакты</h1>
+        <p>
+          Для теста ниже стоят сгенерированные данные. В боевой версии их просто заменим на твои реальные контакты.
+        </p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container grid grid-2">
+        <div class="card">
+          <h2>Способы связи</h2>
+
+          <div class="contact-list">
+            <div class="contact-item">
+              <strong>WhatsApp</strong>
+              <a href="https://wa.me/34612345678" target="_blank" rel="noopener">+34 612 345 678</a>
+            </div>
+
+            <div class="contact-item">
+              <strong>Email</strong>
+              <a href="mailto:info@costavolt-electric.es">info@costavolt-electric.es</a>
+            </div>
+
+            <div class="contact-item">
+              <strong>Зона работы</strong>
+              <span>Torrevieja, Orihuela Costa, Guardamar, La Mata, Ciudad Quesada</span>
+            </div>
+
+            <div class="contact-item">
+              <strong>Формат связи</strong>
+              <span>WhatsApp, email, форма на сайте</span>
+            </div>
+          </div>
+
+          <div class="contact-actions">
+            <a class="btn btn-primary" href="https://wa.me/34612345678" target="_blank" rel="noopener">Открыть WhatsApp</a>
+            <a class="btn btn-secondary" href="mailto:info@costavolt-electric.es">Написать email</a>
+          </div>
+        </div>
+
+        <div class="card">
+          <h2>Форма заявки</h2>
+
+          <form class="contact-form" action="thanks.html" method="get">
+            <label>
+              Имя
+              <input type="text" name="name" placeholder="Ваше имя" required />
+            </label>
+
+            <label>
+              Телефон / WhatsApp
+              <input type="text" name="phone" placeholder="+34 ..." required />
+            </label>
+
+            <label>
+              Email
+              <input type="email" name="email" placeholder="name@example.com" />
+            </label>
+
+            <label>
+              Что нужно сделать
+              <textarea name="message" rows="6" placeholder="Кратко опишите задачу"></textarea>
+            </label>
+
+            <button class="btn btn-primary" type="submit">Отправить заявку</button>
+          </form>
+
+          <p class="form-note">
+            В этой тестовой версии форма ведёт на страницу “Спасибо”.
+            Реальную отправку можно подключить следующим шагом через Formspree, Netlify Forms, EmailJS или свой backend.
+          </p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-wrap">
+      <div>
+        <strong>CostaVolt Electric</strong>
+        <p>Контакты для тестовой версии сайта.</p>
+      </div>
+      <div class="footer-links">
+        <a href="index.html">Главная</a>
+        <a href="pricing.html">Калькулятор</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
